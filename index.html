@@ -1,80 +1,234 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="index.css">
-  <title>My Profile</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Profile</title>
+    <!--    animate cs-->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--    aos animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 <body>
-<header>
-  <nav>
-    <div class="navbar-outer">
-      <div class="portfolio-icon">
+<header class="navbar-section">
+    <div class="portfolio-icon">
         <div class="icon-container">
-          <img
-                  src="assets/icons/icons8-portfolio-website-50.png"
-                  alt="portfolio-icon"
-          />
+            <img
+                    src="assets/icons/icons8-portfolio-website-50.png"
+                    alt="portfolio-icon"
+            />
         </div>
         <div class="icon-container">
-          <h3>Portfolio</h3>
+            <h3>Portfolio</h3>
         </div>
-      </div>
-      <div class="navbar">
-        <ul>
-          <li>
-            <span><a href="#">Home</a></span>
-          </li>
-          <li>
-            <span><a href="#">Projects</a></span>
-          </li>
-          <li>
-            <span><a href="#">Contact</a></span>
-          </li>
-          <li>
-            <span><a href="#">Skills</a></span>
-          </li>
-          <li>
-            <span><a href="#">Gallery</a></span>
-          </li>
-        </ul>
-      </div>
     </div>
-  </nav>
-</header>
-<main>
-  <div class="main-section">
-    <section class="left-section">
-      <div class="left-section-container">
-        <h1 class="item">Hi, <span>I am </span></h1>
-        <h1 class="item"><span>Sachin Tharuka</span></h1>
-        <button class="get-cv item">Get CV</button>
-        <p class="description item">
-          A passionate full stack developer <br>
-          from Sri Lanka.
-        </p>
-        <div class="icons">
-          <h1>Check Out My</h1>
-          <ul>
-            <li><a href="#"><img src="assets/images/facebook.png" alt="facebook"></a></li>
-            <li><a href="#"><img src="assets/images/instagram.png" alt="instagram"></a></li>
-            <li><a href="#"><img src="assets/images/linkedin.png" alt="linkedin"></a></li>
-            <li><a href="#"><img src="assets/images/github.png" alt="github"></a></li>
-          </ul>
+    <div class="navbar">
+        <ul class="nav-links">
+            <li>
+                <span><a href="#home">Home</a></span>
+            </li>
+            <li>
+                <span><a href="#projects">Projects</a></span>
+            </li>
+            <li>
+                <span><a href="#contact-me">Contact</a></span>
+            </li>
+            <li>
+                <span><a href="#skills">Skills</a></span>
+            </li>
+            <li>
+                <span><a href="#gallery">Gallery</a></span>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-      </div>
-    </section>
-    <section class="right-section">
-    </section>
-  </div>
-  <footer>
-    <h4>Copyright © 2023 Sachin Silva. All rights reserved</h4>
-  </footer>
+    </div>
+</header>
+
+<main>
+    <div id="home" class="content">
+        <div class="home">
+            <section class="left-section ">
+                <h1 class="item item-text animate__slideInLeft">Hi, <span class="name " >I am <br>Sachin Silva</span> <br>
+                    Full Stack Developer</h1>
+                <button class="get-cv item">Get CV</button>
+                <p class="description item">
+                    A passionate full stack developer <br>
+                    from Sri Lanka.
+                </p>
+
+                <section class="bottom-section">
+                    <div class="icons">
+                        <h1 class="check-out">Check Out My</h1>
+                        <ul class="social">
+                            <li><a href="#"><img src="assets/images/facebook.png" alt="facebook"></a></li>
+                            <li><a href="#"><img src="assets/images/instagram.png" alt="instagram"></a></li>
+                            <li><a href="#"><img src="assets/images/linkedin.png" alt="linkedin"></a></li>
+                            <li><a href="#"><img src="assets/images/github.png" alt="github"></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section class="right-section"></section>
+
+        </div>
+
+    </div>
+    <div id="projects" class="content">
+        <section class="project-section">
+            <h1 class="head-topic">Projects</h1>
+            <div class="all-projects" data-aos="fade-right">
+                <div class="project ">
+                    <div class="img"></div>
+                    <h1 class="project-topic">Restaurant Management
+                        System</h1>
+                    <p class="project-des">
+                        Stand Alone Application created
+                        using javafx and mysql. This is the
+                        project I did for my first semester
+                        Final.
+                    </p>
+                    <div class="footer-section">
+                        <div class="view-code">View Code</div>
+                        <div class="live-code">Live</div>
+                    </div>
+                </div>
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+            </div>
+            <div class="project-buttons">
+                <input type="radio" name="p-btn1" id="p-btn1">
+                <input type="radio" name="p-btn2" id="p-btn2">
+                <input type="radio" name="p-btn3" id="p-btn3">
+                <input type="radio" name="p-btn4" id="p-btn4">
+            </div>
+
+        </section>
+
+    </div>
+    <div class="content" id="contact-me">
+        <div class="contact-me">
+            <div class="contact-left" data-aos="fade-right"></div>
+            <div class="contact-right" data-aos="fade-left">
+                <h1 class="contact-text">Contact Me</h1>
+                <form action="#" class="fields">
+                    <input class="c-fname field" type="text" placeholder="your first name*">
+                    <input class="c-lname field" type="text" placeholder="your last name*">
+                    <input class="c-phone-number field" type="tel" placeholder="phone number*">
+                    <input class="c-email field" type="email" placeholder="phone email*">
+                    <textarea class="field" name="message" id="message" cols="30" rows="10"
+                              placeholder="your message*"></textarea>
+                    <input type="submit" class="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="skills">
+        <div class="skills">
+            <h1 id="skills-head" class="head-topic">Skills</h1>
+            <div class="skills-section">
+                <div class="left-skills" data-aos="fade-right">
+
+                    <label for="html" class="skill-bar-text">HTML</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="html" value="100" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">100%</span>
+                    </div>
+                    <label for="css" class="skill-bar-text">CSS</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="css" value="90" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">90%</span>
+                    </div>
+                    <label for="js" class="skill-bar-text">JavaScript</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="js" value="80" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">80%</span>
+                    </div>
+                    <label for="java" class="skill-bar-text">Java</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="java" value="90" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">90%</span>
+                    </div>
+                    <label for="python" class="skill-bar-text">Java</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="python" value="70" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">70%</span>
+                    </div>
+                    <label for="GIT" class="skill-bar-text">Java</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="GIT" value="90" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">90%</span>
+                    </div>
+
+                </div>
+                <div class="right-skills" data-aos="fade-left">
+                    <h1 class="skill-topic">Frameworks</h1>
+                    <label for="springboot" class="skill-bar-text">Springboot</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="springboot" value="80" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">80%</span>
+                    </div>
+                    <label for="Angular" class="skill-bar-text">Angular</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="Angular" value="80" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">80%</span>
+                    </div>
+                    <label for="React" class="skill-bar-text">React</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="React" value="80" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">80%</span>
+                    </div>
+                    <h1 class="skill-topic">Databases</h1>
+                    <label for="MySQL" class="skill-bar-text">MySQL</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="MySQL" value="90" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">90%</span>
+                    </div>
+                    <label for="MongoDB" class="skill-bar-text">MongoDB</label>
+                    <div class="progress-bar-wrapper">
+                        <progress id="MongoDB" value="80" max="100" class="skill-bar"></progress>
+                        <span class="progress-label">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="gallery">
+        <div class="gallery">
+            <h1 class="head-topic" id="gallery-head-topic">Gallery</h1>
+            <div class="gallery-pics">
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+            </div>
+            <div class="gallery-buttons">
+                <input type="radio" name="g-btn1" id="g-btn1">
+                <input type="radio" name="g-btn2" id="g-btn2">
+                <input type="radio" name="g-btn3" id="g-btn3">
+                <input type="radio" name="g-btn4" id="g-btn4">
+            </div>
+        </div>
+    </div>
 </main>
 
-<script src="index.js"></script>
+<footer class="footer"><span class="footer-text">Copyright © 2023 Sachin Silva. All rights reserved</span></footer>
+<!--aos js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--init aos-->
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
