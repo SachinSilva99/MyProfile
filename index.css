@@ -63,7 +63,12 @@ body::-webkit-scrollbar-thumb {
     color: #C5C6C7;
     font: 36px roboto;
 }
-
+.icon-item{
+    color: #66fcf1;
+}
+.icon-item:hover{
+    color: #0c948a;
+}
 
 .navbar {
     width: 100%;
