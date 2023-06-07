@@ -14,7 +14,7 @@
     />
     <!--    aos animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!--    font awesome lib-->
+    <!--    font awesome lib-->
     <link rel="stylesheet" href="assets/lib/fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="index.css"/>
@@ -56,13 +56,23 @@
             <div class="line3"></div>
         </div>
     </div>
+    <div class="half-screen-menu">
+        <ul class="menu-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </div>
 </header>
 
 <main>
     <div id="home" class="content">
         <div class="home">
             <section class="left-section ">
-                <h1 class="item item-text animate__slideInLeft">Hi, <span class="name " >I am <br>Sachin Silva</span> <br>
+                <h1 class="item item-text animate__slideInLeft">Hi, <span class="name ">I am <br>Sachin Silva</span>
+                    <br>
                     Full Stack Developer</h1>
                 <button class="get-cv item">Get CV</button>
                 <p class="description item">
@@ -228,6 +238,22 @@
 <footer class="footer"><span class="footer-text">Copyright © 2023 Sachin Silva. All rights reserved</span></footer>
 <!--aos js-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const halfScreenMenu = document.querySelector('.half-screen-menu');
+    const menuLinks = document.querySelectorAll('.menu-links li a');
+
+    hamburger.addEventListener('click', function () {
+        halfScreenMenu.classList.toggle('active');
+    });
+    menuLinks.forEach(function(menuLink) {
+        menuLink.addEventListener('click', function() {
+            halfScreenMenu.classList.remove('active');
+            hamburger.classList.remove('open');
+        });
+    });
+
+</script>
 <!--init aos-->
 <script>
     AOS.init();
