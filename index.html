@@ -84,10 +84,13 @@
                     <div class="icons">
                         <h1 class="check-out">Check Out My</h1>
                         <ul class="social">
-                            <li><a target="_blank" href="https://www.facebook.com/sachiya.sachiyaevil?mibextid=ZbWKwL"><i class="icon-item fa-brands fa-facebook"></i></a></li>
+                            <li><a target="_blank"
+                                   href="https://www.facebook.com/sachiya.sachiyaevil?mibextid=ZbWKwL"><i
+                                    class="icon-item fa-brands fa-facebook"></i></a></li>
                             <li><a target="_blank" href="#"><i class="icon-item fa-brands fa-instagram"></i></a></li>
                             <li><a target="_blank" href="#"><i class="icon-item fa-brands fa-linkedin"></i></a></li>
-                            <li><a target="_blank" href="https://github.com/SachinSilva99"><i class="icon-item fa-brands fa-github"></i></a></li>
+                            <li><a target="_blank" href="https://github.com/SachinSilva99"><i
+                                    class="icon-item fa-brands fa-github"></i></a></li>
                         </ul>
                     </div>
                 </section>
@@ -96,10 +99,12 @@
             <div class="iconss">
 
                 <ul class="social">
-                    <li><a target="_blank" href="https://www.facebook.com/sachiya.sachiyaevil?mibextid=ZbWKwL"><i class="icon-item fa-brands fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/sachiya.sachiyaevil?mibextid=ZbWKwL"><i
+                            class="icon-item fa-brands fa-facebook"></i></a></li>
                     <li><a target="_blank" href="#"><i class="icon-item fa-brands fa-instagram"></i></a></li>
                     <li><a target="_blank" href="#"><i class="icon-item fa-brands fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/SachinSilva99"><i class="icon-item fa-brands fa-github"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/SachinSilva99"><i
+                            class="icon-item fa-brands fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -109,8 +114,8 @@
         <section class="project-section">
             <h1 class="head-topic">Projects</h1>
             <div class="all-projects" data-aos="fade-right">
-                <div class="project ">
-                    <div class="img"></div>
+                <div class="project">
+                    <img class="img" src="assets/projects/restaurantmanagement.png" loading="lazy" alt="restaurantApp">
                     <h1 class="project-topic">Restaurant Management
                         System</h1>
                     <p class="project-des">
@@ -124,9 +129,42 @@
                         <div class="live-code">Live</div>
                     </div>
                 </div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
+                <div class="project">
+                    <img class="img" src="assets/projects/4sconnect.png" loading="lazy" alt="4sconnect">
+                    <h1 class="project-topic">4’s Connect Game</h1>
+                    <p class="project-des">
+                        Stand Alone Application created using javafx.
+                        It’s an assignment in OOP module where it has human vs smart AI Player
+                    </p>
+                    <div class="footer-section">
+                        <div class="view-code">View Code</div>
+                        <div class="live-code">Live</div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="img" src="assets/projects/sms.png" loading="lazy" alt="sms">
+                    <h1 class="project-topic">Student Management System</h1>
+                    <p class="project-des">
+                        Terminal Application built using java 1.8 which as an assignment to do
+                        for the module Programming Fundamentals.
+                    </p>
+                    <div class="footer-section">
+                        <div class="view-code">View Code</div>
+                        <div class="live-code">Live</div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="img" src="assets/projects/tictactoe.png" loading="lazy" alt="tictactoe">
+                    <h1 class="project-topic">Tic Tac Toe</h1>
+                    <p class="project-des">
+                        I build this web game just to practice and develop my skills in
+                        HTML, CSS and JavaScript.
+                    </p>
+                    <div class="footer-section">
+                        <div class="view-code">View Code</div>
+                        <div class="live-code">Live</div>
+                    </div>
+                </div>
             </div>
             <div class="project-buttons">
                 <input type="radio" name="p-btn1" id="p-btn1">
@@ -254,8 +292,8 @@
     hamburger.addEventListener('click', function () {
         halfScreenMenu.classList.toggle('active');
     });
-    menuLinks.forEach(function(menuLink) {
-        menuLink.addEventListener('click', function() {
+    menuLinks.forEach(function (menuLink) {
+        menuLink.addEventListener('click', function () {
             halfScreenMenu.classList.remove('active');
             hamburger.classList.remove('open');
         });

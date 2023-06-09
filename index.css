@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
+::selection {
+    background-color: #0c948a;
+    color: black;
+}
 h1 {
     color: #c5c6c7;
 }
@@ -237,7 +240,6 @@ main {
 }
 
 .head-topic {
-
     font-size: xxx-large;
     margin-top: 4%;
     margin-left: 2%;
@@ -265,7 +267,6 @@ main {
 
 .img {
     width: 100%;
-    height: 20vw;
     background-image: url("assets/projects/restaurantmanagement.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,7 +280,7 @@ main {
 
 .project-des {
     color: #FFFFFF;
-    font-size: xx-large;
+    font-size: x-large;
     margin: 1em;
 }
 
@@ -287,12 +288,11 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-
 }
 
 .view-code, .live-code {
     color: #C5C6C7;
-    font-size: xx-large;
+    font-size: x-large;
     margin: 1em;
     cursor: pointer;
 }
@@ -686,7 +686,7 @@ progress {
     }
 
     .project-des {
-        font-size: x-large;
+        font-size: small;
         margin: 1em;
     }
     .project {
@@ -696,7 +696,6 @@ progress {
 
     .img {
         width: 100%;
-        height: 20vw;
         background-image: url("assets/projects/restaurantmanagement.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -705,9 +704,7 @@ progress {
     .project-topic {
         font-size: large;
     }
-    .project-des {
-        font-size: large;
-    }
+
     .footer-section {
         display: flex;
         justify-content: space-between;
@@ -716,7 +713,7 @@ progress {
     }
 
     .view-code, .live-code {
-        font-size: large;
+        font-size: medium;
     }
 
     .field {
@@ -814,7 +811,8 @@ progress {
         margin-top: 8vw;
     }
     .footer-section, .project-des, .project-topic, .view-code, .live-code{
-        font-size: medium;
+        font-size: small;
+
     }
 
 }
@@ -1095,8 +1093,7 @@ progress {
 
     .item {
         margin: 0 0 0 20px;
-        font-size: 32px;
-        line-height: 36px;
+        font-size: x-large;
     }
 
     .project {
@@ -1116,11 +1113,11 @@ progress {
     }
 
     .project-topic, .project-des, .view-code, .live-code {
-        font-size: small;
+        font-size: xx-small;
     }
 
     .footer-text {
-        font-size: small;
+        font-size: xx-small;
     }
 
     .contact-left {
