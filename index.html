@@ -15,7 +15,7 @@
     <!--    aos animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--    font awesome lib-->
-    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
@@ -68,6 +68,7 @@
 </header>
 
 <main>
+    <!------------------home------------------------------------------>
     <div id="home" class="content">
         <div class="home">
             <section class="left-section ">
@@ -110,6 +111,7 @@
         </div>
 
     </div>
+    <!------------------projects------------------------------------------>
     <div id="projects" class="content">
         <section class="project-section">
             <h1 class="head-topic">Projects</h1>
@@ -201,6 +203,7 @@
         </section>
 
     </div>
+    <!------------------contact-me------------------------------------------>
     <div class="content" id="contact-me">
         <div class="contact-me">
             <div class="contact-left" data-aos="fade-right"></div>
@@ -218,6 +221,7 @@
             </div>
         </div>
     </div>
+    <!------------------skills------------------------------------------>
     <div class="content" id="skills">
         <div class="skills">
             <h1 id="skills-head" class="head-topic">Skills</h1>
@@ -288,6 +292,7 @@
             </div>
         </div>
     </div>
+    <!------------------gallery------------------------------------------>
     <div class="content" id="gallery">
         <div class="gallery">
             <h1 class="head-topic" id="gallery-head-topic">Gallery</h1>
@@ -310,7 +315,12 @@
 </footer>
 <!--aos js-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="/assets/lib/jquery.js"></script>
+<script src="assets/lib/jquery.js"></script>
+
+<!--init aos-->
+<script>
+    AOS.init();
+</script>
 <script>
     const hamburger = document.querySelector('.hamburger');
     const halfScreenMenu = document.querySelector('.half-screen-menu');
@@ -337,10 +347,6 @@
             $('.project').slice(startIndex, endIndex).show();
         });
     });
-</script>
-<!--init aos-->
-<script>
-    AOS.init();
 </script>
 </body>
 </html>

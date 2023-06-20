@@ -49,7 +49,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .portfolio-icon {
-    /* # border: 1px solid red; */
     display: flex;
     justify-items: center;
     align-items: center;
@@ -542,8 +541,8 @@ progress {
 .half-screen-menu.active {
     display: block;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50px;
+    right: 0;
     width: 50%;
     height: 100%;
     background-color: #66FCF1;
@@ -567,10 +566,6 @@ progress {
     font-size: 20px;
     text-decoration: none;
 }
-
-/* Adjust the styles as needed */
-
-
 
 
 /*laptop*/
@@ -1033,7 +1028,6 @@ progress {
         display: flex;
         width: 100vw;
         height: 690px;
-        background-image: url("assets/images/img.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -1081,17 +1075,12 @@ progress {
 /*mobile*/
 @media screen and (max-width: 425px) {
 
-
-
-
     #skills{
         overflow: scroll;
     }
     .skill-bar{
         width: 100%;
     }
-
-
 
     .left-section {
 
