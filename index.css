@@ -1022,6 +1022,34 @@ progress {
 }
 
 @media screen and (max-width: 766px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .right-section {
+        display: flex;
+        width: 100vw;
+        height: 690px;
+        background-image: url("assets/images/img.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .icons{
+        display: none;
+    }
+    .iconss{
+        display: block;
+    }
+    .iconss {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     .item {
         font-size: x-large;
     }
@@ -1034,6 +1062,7 @@ progress {
     }
 }
 @media screen and (max-width: 540px){
+
     .skills-section{
         display: flex;
         flex-direction: column;
@@ -1051,18 +1080,8 @@ progress {
 }
 /*mobile*/
 @media screen and (max-width: 425px) {
-    .icons{
-        display: none;
-    }
-    .iconss{
-        display: block;
-    }
-    .iconss {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+
+
 
 
     #skills{
@@ -1071,20 +1090,8 @@ progress {
     .skill-bar{
         width: 100%;
     }
-    .home {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .right-section {
-        display: flex;
-        width: 100vw;
-        height: 690px;
-        background-image: url("assets/images/img.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
+
 
     .left-section {
 
