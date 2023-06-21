@@ -138,6 +138,8 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
+    scroll-margin-top: 70px; /* Add this line to create a margin at the top */
+
 }
 
 .left-section {
@@ -155,7 +157,6 @@ main {
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
     margin-bottom: 30px;
-
 }
 
 .description {
@@ -240,7 +241,7 @@ main {
 
 .head-topic {
     font-size: xxx-large;
-    margin-top: 4%;
+    margin-top: 70px;
     margin-left: 2%;
     color: #45A29E;
 }
@@ -310,7 +311,7 @@ main {
 }
 
 .contact-left {
-    margin-top: 5%;
+    margin-top: 70px;
     background-image: url('assets/images/img.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -319,10 +320,10 @@ main {
 }
 
 .contact-right {
+    margin-top: 70px;
     flex: 1;
     display: flex;
     align-items: center;
-
     flex-direction: column;
 }
 
@@ -636,7 +637,7 @@ progress {
 @media screen and (max-width: 1366px) {
     .head-topic{
         font-size: xx-large;
-        margin-top: 5vh;
+        margin-top: 70px;
     }
     .navbar > ul > li {
         padding-right: 5em;
@@ -1071,6 +1072,7 @@ progress {
         width: 80vw;
         height: 20vh;
     }
+
 }
 /*mobile*/
 @media screen and (max-width: 425px) {
@@ -1083,12 +1085,11 @@ progress {
     }
 
     .left-section {
-
         width: 100vw;
     }
 
     .item {
-        margin: 0 0 0 20px;
+        margin:0 0 0 20px;
         font-size: x-large;
     }
 
