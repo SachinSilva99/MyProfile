@@ -4,12 +4,15 @@
     background-color: #0c948a;
     color: black;
 }
+
 h1 {
     color: #c5c6c7;
 }
-.iconss{
+
+.iconss {
     display: none;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -67,10 +70,12 @@ body::-webkit-scrollbar-thumb {
     color: #C5C6C7;
     font: 36px roboto;
 }
-.icon-item{
+
+.icon-item {
     color: #66fcf1;
 }
-.icon-item:hover{
+
+.icon-item:hover {
     color: #0c948a;
 }
 
@@ -267,7 +272,7 @@ main {
 
 .img {
     width: 100%;
-    background-image: url("assets/projects/restaurantmanagement.png");
+    height: 216px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -296,12 +301,14 @@ main {
     margin: 1em;
     cursor: pointer;
 }
-.project-buttons{
+
+.project-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
+
 /*projects  end---------------------------------*/
 
 /*contact me start--------------------------------------------------*/
@@ -474,43 +481,50 @@ progress {
 
 
 /*gallery start --------------------------------------------------*/
-.gallery{
+.gallery {
     display: flex;
     flex-direction: column;
     width: 100vw;
     align-items: center;
     justify-content: center;
 }
-.gallery-pics{
+
+.gallery-pics {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:1vw;
+    gap: 1vw;
 }
-.gallery-item{
+
+.gallery-item {
     background-repeat: no-repeat;
     background-size: cover;
     width: 30vw;
     height: 70vh;
     border-radius: 20px;
 }
-#gallery-head-topic{
+
+#gallery-head-topic {
     align-self: start;
 }
 
-.gallery-item:nth-child(1){
+.gallery-item:nth-child(1) {
     background-image: url("assets/gallery/Rectangle 21.png");
 }
-.gallery-item:nth-child(2){
+
+.gallery-item:nth-child(2) {
     background-image: url("assets/gallery/Rectangle 22.png");
 }
-.gallery-item:nth-child(3){
+
+.gallery-item:nth-child(3) {
     background-image: url("assets/gallery/Rectangle 23.png");
 }
-.gallery-buttons{
+
+.gallery-buttons {
     margin-top: 20px;
 }
+
 .footer {
     width: 100%;
     height: 50px;
@@ -635,10 +649,11 @@ progress {
 }
 
 @media screen and (max-width: 1366px) {
-    .head-topic{
+    .head-topic {
         font-size: xx-large;
         margin-top: 70px;
     }
+
     .navbar > ul > li {
         padding-right: 5em;
         padding-left: 20px;
@@ -685,6 +700,7 @@ progress {
         font-size: small;
         margin: 1em;
     }
+
     .project {
         width: 20vw;
         height: 60vh;
@@ -692,7 +708,7 @@ progress {
 
     .img {
         width: 100%;
-        background-image: url("assets/projects/restaurantmanagement.png");
+        height: 216px;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -715,16 +731,20 @@ progress {
     .field {
         margin-left: 3vw;
     }
-    #skills-head{
+
+    #skills-head {
         position: absolute;
     }
-    .left-skills{
+
+    .left-skills {
         margin-top: 6vw;
     }
-    .right-skills{
+
+    .right-skills {
         margin-top: 2vw;
     }
-    .skill-bar{
+
+    .skill-bar {
         width: 35vw;
     }
 }
@@ -800,13 +820,16 @@ progress {
     .field {
         margin-left: 5vw;
     }
-    .left-skills{
+
+    .left-skills {
         margin-top: 12vw;
     }
-    .right-skills{
+
+    .right-skills {
         margin-top: 8vw;
     }
-    .footer-section, .project-des, .project-topic, .view-code, .live-code{
+
+    .footer-section, .project-des, .project-topic, .view-code, .live-code {
         font-size: small;
 
     }
@@ -815,9 +838,10 @@ progress {
 
 /*tab*/
 @media screen and (max-width: 994px) {
-    .footer-section, .project-des, .project-topic, .view-code, .live-code{
+    .footer-section, .project-des, .project-topic, .view-code, .live-code {
         font-size: small;
     }
+
     .item-text {
         flex-shrink: 0;
     }
@@ -1022,9 +1046,11 @@ progress {
         display: flex;
         flex-direction: column;
     }
-    .left-section{
+
+    .left-section {
         width: 100%;
     }
+
     .right-section {
         display: flex;
         width: 100vw;
@@ -1033,18 +1059,22 @@ progress {
         background-size: contain;
         background-position: center;
     }
-    .icons{
+
+    .icons {
         display: none;
     }
-    .iconss{
+
+    .iconss {
         display: block;
     }
+
     .iconss {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
+
     .item {
         font-size: x-large;
     }
@@ -1052,35 +1082,42 @@ progress {
     .get-cv {
         width: 21vh;
     }
-    .footer-section, .project-des, .project-topic, .view-code, .live-code{
+
+    .footer-section, .project-des, .project-topic, .view-code, .live-code {
         font-size: small;
     }
 }
-@media screen and (max-width: 540px){
 
-    .skills-section{
+@media screen and (max-width: 540px) {
+
+    .skills-section {
         display: flex;
         flex-direction: column;
     }
-    .footer-section, .project-des, .project-topic, .view-code, .live-code{
+
+    .footer-section, .project-des, .project-topic, .view-code, .live-code {
         font-size: small;
     }
-    .gallery-pics{
+
+    .gallery-pics {
         flex-direction: column;
     }
-    .gallery-item{
+
+    .gallery-item {
         width: 80vw;
         height: 20vh;
     }
 
 }
+
 /*mobile*/
 @media screen and (max-width: 425px) {
 
-    #skills{
+    #skills {
         overflow: scroll;
     }
-    .skill-bar{
+
+    .skill-bar {
         width: 100%;
     }
 
@@ -1089,7 +1126,7 @@ progress {
     }
 
     .item {
-        margin:0 0 0 20px;
+        margin: 0 0 0 20px;
         font-size: x-large;
     }
 
@@ -1138,35 +1175,44 @@ progress {
     input[type="submit"] {
         align-self: end;
     }
-    .skills-section{
+
+    .skills-section {
         flex-direction: column;
     }
-    .left-skills{
+
+    .left-skills {
         margin-top: 0;
     }
-    .left-skills, .right-skills{
+
+    .left-skills, .right-skills {
         width: 100vw;
         height: 100%;
         gap: 5px;
     }
-    .right-skills{
+
+    .right-skills {
         margin-top: 0;
     }
-    .progress-bar-wrapper{
+
+    .progress-bar-wrapper {
         width: 90%;
     }
-    #skills-head{
+
+    #skills-head {
         position: static;
     }
-    .footer-section{
+
+    .footer-section {
         display: none;
     }
-    .progress-bar-wrapper{
+
+    .progress-bar-wrapper {
         height: 1.5vh;
     }
 }
+
 @media screen and (max-width: 321px) {
-    .footer-text{
+    .footer-text {
         font-size: x-small;
     }
 }
