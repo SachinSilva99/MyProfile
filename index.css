@@ -302,12 +302,20 @@ main {
     cursor: pointer;
 }
 
-.project-buttons {
+
+
+.project-buttons, .gallery-buttons {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
+    margin-top: 15px;
 }
+
+.project-button, .gallery-btns {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 3px;
+}
+
 
 /*projects  end---------------------------------*/
 
@@ -500,8 +508,8 @@ progress {
 .gallery-item {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 30vw;
-    height: 70vh;
+    width: 25vw;
+    height: 57vh;
     border-radius: 20px;
 }
 
@@ -1108,6 +1116,47 @@ progress {
         height: 20vh;
     }
 
+    .project {
+        position: relative;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-topic {
+        margin-top: 10px;
+    }
+
+    .project-des {
+        margin-top: 5px;
+    }
+
+    .footer-section {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .view-code {
+        margin: 0 5px;
+        padding: 5px 10px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+    .project:hover  .footer-section {
+        display: flex;
+    }
+
 }
 
 /*mobile*/
@@ -1200,10 +1249,6 @@ progress {
 
     #skills-head {
         position: static;
-    }
-
-    .footer-section {
-        display: none;
     }
 
     .progress-bar-wrapper {
