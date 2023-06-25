@@ -422,6 +422,11 @@
 
     hamburger.addEventListener('click', function () {
         halfScreenMenu.classList.toggle('active');
+        if (halfScreenMenu.classList.contains('active')) {
+            hamburger.style.backgroundImage = "url('assets/icons/icons8-close-50.png')";
+        } else {
+            hamburger.style.backgroundImage = "url('assets/icons/icons8-menu-50.png')";
+        }
     });
     menuLinks.forEach(function (menuLink) {
         menuLink.addEventListener('click', function () {
