@@ -16,10 +16,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--    font awesome lib-->
     <link rel="stylesheet" href="assets/lib/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="icon" href="./assets/icons/icons8-portfolio-website-50.png" type="image/png">
+
     <meta property="og:image" content="https://i.imgur.com/ihs9gXN.png">
     <meta property="og:description" content=" A passionate full stack developer
                     from Sri Lanka.">
-
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
@@ -131,8 +132,9 @@
                         Final.
                     </p>
                     <div class="footer-section">
-                        <div class="view-code">View Code</div>
-                        <div class="live-code">Live</div>
+                        <a href="https://github.com/SachinSilva99/lms-layered-maven-finalProject" target="_blank">
+                            <div class="view-code">View Code</div>
+                        </a>
                     </div>
                 </div>
                 <div class="project">
@@ -143,8 +145,9 @@
                         It’s an assignment in OOP module where it has human vs smart AI Player
                     </p>
                     <div class="footer-section">
-                        <div class="view-code">View Code</div>
-                        <div class="live-code">Live</div>
+                        <a href="#">
+                            <div class="view-code">View Code</div>
+                        </a>
                     </div>
                 </div>
                 <div class="project">
@@ -155,8 +158,9 @@
                         for the module Programming Fundamentals.
                     </p>
                     <div class="footer-section">
-                        <div class="view-code">View Code</div>
-                        <div class="live-code">Live</div>
+                        <a href="https://github.com/SachinSilva99/student-management-java-terminal" target="_blank">
+                            <div class="view-code">View Code</div>
+                        </a>
                     </div>
                 </div>
                 <div class="project">
@@ -167,8 +171,12 @@
                         HTML, CSS and JavaScript.
                     </p>
                     <div class="footer-section">
-                        <div class="view-code">View Code</div>
-                        <div class="live-code">Live</div>
+                        <a href="https://github.com/SachinSilva99/tictactoe" target="_blank">
+                            <div class="view-code">View Code</div>
+                        </a>
+                        <a href="https://sachinsilva99.github.io/tictactoe/" target="_blank">
+                            <div class="view-code">Live</div>
+                        </a>
                     </div>
                 </div>
                 <div class="project">
@@ -346,12 +354,12 @@
                         <progress id="java" value="90" max="100" class="skill-bar"></progress>
                         <span class="progress-label">90%</span>
                     </div>
-                    <label for="python" class="skill-bar-text">Java</label>
+                    <label for="python" class="skill-bar-text">Python</label>
                     <div class="progress-bar-wrapper">
                         <progress id="python" value="70" max="100" class="skill-bar"></progress>
                         <span class="progress-label">70%</span>
                     </div>
-                    <label for="GIT" class="skill-bar-text">Java</label>
+                    <label for="GIT" class="skill-bar-text">Git</label>
                     <div class="progress-bar-wrapper">
                         <progress id="GIT" value="90" max="100" class="skill-bar"></progress>
                         <span class="progress-label">90%</span>
@@ -398,12 +406,13 @@
                 <div class="gallery-item"></div>
                 <div class="gallery-item"></div>
                 <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
             </div>
             <div class="gallery-buttons">
                 <input class="gallery-btns" type="radio" name="g-btn1" id="g-btn1" checked>
                 <input class="gallery-btns" type="radio" name="g-btn1" id="g-btn2">
-                <input class="gallery-btns" type="radio" name="g-btn1" id="g-btn3">
-                <input class="gallery-btns" type="radio" name="g-btn1" id="g-btn4">
             </div>
         </div>
     </div>
@@ -449,6 +458,18 @@
             const endIndex = startIndex + 4;
             $('.project').hide();
             $('.project').slice(startIndex, endIndex).show();
+        });
+    });
+    $(document).ready(function () {
+        $('.gallery-item').hide();
+        $('.gallery-item').slice(0, 3).show();
+
+        $('.gallery-btns').on('click', function () {
+            const index = $('.gallery-btns').index(this);
+            const startIndex = index * 3;
+            const endIndex = startIndex + 3;
+            $('.gallery-item').hide();
+            $('.gallery-item').slice(startIndex, endIndex).show();
         });
     });
 </script>

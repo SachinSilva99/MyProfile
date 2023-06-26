@@ -528,6 +528,15 @@ progress {
 .gallery-item:nth-child(3) {
     background-image: url("assets/gallery/Rectangle 23.png");
 }
+.gallery-item:nth-child(4) {
+    background-image: url("assets/projects/restaurantmanagement.png");
+}
+.gallery-item:nth-child(5) {
+    background-image: url("assets/projects/sms.png");
+}
+.gallery-item:nth-child(6) {
+    background-image: url("assets/projects/cal.png");
+}
 
 .gallery-buttons {
     margin-top: 20px;
