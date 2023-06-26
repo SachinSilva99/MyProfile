@@ -265,7 +265,7 @@ main {
     width: 23vw;
     height: 65vh;
     background-color: #0EC2B5;
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -720,7 +720,7 @@ progress {
 
     .project {
         width: 20vw;
-        height: 60vh;
+        height: 58vh;
     }
 
     .img {
